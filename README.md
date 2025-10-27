@@ -5,4 +5,4 @@ https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
 
 Final Render:
-https://github.com/fpbellow/RT-Basics-Projects/blob/main/RTWeekend/result.png
+https://raw.githubusercontent.com/fpbellow/RT-Basics-Projects/main/RTWeekend/result.png
