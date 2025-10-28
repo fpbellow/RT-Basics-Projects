@@ -1,9 +1,11 @@
 # HelloRayTracing
 
-Provided is the repository of my code from following the "Ray Tracing in One Weekend" by Peter Shirley that can be found publicly here:
-https://raytracing.github.io/books/RayTracingInOneWeekend.html
+Following the Ray Tracing in One Weekend series by Peter Shirley, this my collection of projects of which I made personal changes and optimizations.
 
 
-Final Render:
+Screenshots:
+(settings used for captures is much higher than the ones in the repo that feature more nominal performance and run times)
+
+In a Weekend Final Render:
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/85680de6-700f-4800-8211-b9e59c510ff8" />
 
