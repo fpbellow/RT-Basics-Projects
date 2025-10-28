@@ -1,4 +1,4 @@
-# HelloRayTracing
+# RT-Basics-Projects
 
 Following the Ray Tracing in One Weekend series by Peter Shirley, this my collection of projects of which I made personal changes and optimizations.
 
