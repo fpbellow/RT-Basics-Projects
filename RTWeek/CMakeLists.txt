@@ -18,4 +18,8 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET RTWeek PROPERTY CXX_STANDARD 20)
 endif()
 
+add_custom_command( TARGET RTWeek POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory 
+${CMAKE_SOURCE_DIR}/assets/textures 
+${CMAKE_BINARY_DIR}/assets/textures )
+
 # TODO: Add tests and install targets if needed.

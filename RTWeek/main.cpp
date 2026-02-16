@@ -9,6 +9,8 @@
 #include "include/quad.hpp"
 #include "include/constant_medium.hpp"
 
+#include <filesystem>
+
 
 void bouncing_spheres()
 {
@@ -115,7 +117,7 @@ void checkered_spheres()
 
 void earth()
 {
-	auto earth_texture = make_shared<image_texture>("C:/Users/admin/source/repos/RT-Basics-Projects/RTWeek/assets/textures/earthmap.jpg");
+	auto earth_texture = make_shared<image_texture>("assets/textures/earthmap.jpg");
 	auto earth_surface = make_shared<lambertian>(earth_texture);
 	
 	auto globe = make_shared<Sphere>(vec3(0, 0, 0), 2.0f, earth_surface);
@@ -337,8 +339,8 @@ void week_after_scene(int image_width, int samples_per_pixel, int max_depth)
 		{
 			auto w = 100.0f;
 			auto x0 = -1000.0f + i * w;
-			auto z0 = -1000.0f * j * w;
-			auto y0 = x0 + w;
+			auto z0 = -1000.0f + j * w;
+			auto y0 = 0.0f;
 			auto x1 = x0 + w;
 			auto y1 = random_float(1, 101);
 			auto z1 = z0 + w;
@@ -370,7 +372,7 @@ void week_after_scene(int image_width, int samples_per_pixel, int max_depth)
 	boundary = make_shared<Sphere>(vec3(0, 0, 0), 5000.0f, make_shared<dielectric>(1.5f));
 	world.add(make_shared<constant_medium>(boundary, .0001f, vec3(1, 1, 1)));
 
-	auto emat = make_shared<lambertian>(make_shared<image_texture>("C:/Users/admin/source/repos/RT-Basics-Projects/RTWeek/assets/textures/earthmap.jpg"));
+	auto emat = make_shared<lambertian>(make_shared<image_texture>("assets/textures/earthmap.jpg"));
 	world.add(make_shared<Sphere>(vec3(400, 200, 400), 100.0f, emat));
 	auto pertext = make_shared<noise_texture>(.2f);
 	world.add(make_shared<Sphere>(vec3(220, 280, 300), 80.0f, make_shared<lambertian>(pertext)));
