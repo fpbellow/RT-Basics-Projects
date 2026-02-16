@@ -13,4 +13,4 @@ In a Weekend Final Render:
 
 The Next Week Final Render:
 
-<img width="800" height="800" alt="image" src="https://raw.githubusercontent.com/fpbellow/RT-Basics-Projects/refs/heads/main/RTWeek/result.png" />
+<img width="1280" height="120" alt="image" src="https://raw.githubusercontent.com/fpbellow/RT-Basics-Projects/refs/heads/main/RTWeek/result.png" />
